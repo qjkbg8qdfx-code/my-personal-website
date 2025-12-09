@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Brand | Bold Marketing</title>
+    <meta name="description" content="A personal brand marketing portfolio.">
+
+    <!-- Google Fonts: Playfair Display & Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <a href="#" class="logo">My Brand.</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Let's Talk</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Bold Ideas.<br>Real Results.</h1>
+                    <p class="hero-sub">I help brands stand out in a crowded digital world with data-driven marketing
+                        strategies.</p>
+                    <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What I Do</h2>
+                    <p>Comprehensive marketing solutions tailored to your needs.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Strategy</h3>
+                        <p>Data-backed roadmaps to guide your brand's growth.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Content</h3>
+                        <p>Engaging storytelling that resonates with your audience.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Analytics</h3>
+                        <p>Deep insights to optimize performance and ROI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>I am a passionate marketer with over 5 years of experience helping businesses scale. I
+                            believe in the power of bold creativity mixed with rigorous analysis.</p>
+                    </div>
+                    <div class="about-image">
+                        <!-- Placeholder for user image -->
+                        <div class="image-placeholder"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2>Let's Create<br>Something Amazing</h2>
+                        <p>Ready to take your brand to the next level? Fill out the form or send me an email.</p>
+                        <a href="mailto:hello@example.com" class="contact-email">hello@example.com</a>
+                    </div>
+                    <form class="contact-form"
+                        onsubmit="event.preventDefault(); alert('Thank you! This is a demo form.');">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="4" placeholder="Tell me about your project"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Personal Brand. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
