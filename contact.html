@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | System.Logic</title>
+    <meta name="description" content="Request your Efficiency Audit. Start your transition to an automated enterprise.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">System.<span style="color:var(--color-accent)">Logic</span></a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="methodology.html">Methodology</a></li>
+                    <li><a href="impact.html">Impact</a></li>
+                    <li><a href="contact.html" class="active btn btn-primary">Get Audit</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-padding">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <!-- Left Side: Info -->
+                    <div class="contact-info">
+                        <h1>Logic Starts Here.</h1>
+                        <p class="hero-sub" style="margin-left: 0; color: #444;">
+                            You are losing hours every day to inefficiency. Let's calculate exactly how many.
+                        </p>
+
+                        <div style="margin-top: 3rem;">
+                            <h3>Why Request an Audit?</h3>
+                            <ul class="feature-list" style="margin: 1.5rem 0;">
+                                <li>Identify hidden bottlenecks in your stack.</li>
+                                <li>Get a cost-benefit analysis of AI integration.</li>
+                                <li>Receive a preliminary roadmap for automation.</li>
+                            </ul>
+                        </div>
+
+                        <div style="margin-top: 3rem;">
+                            <p style="font-size: 0.9rem; color: #888;">Direct Email</p>
+                            <a href="mailto:connect@systemlogic.com.au"
+                                class="contact-email">connect@systemlogic.com.au</a>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Form -->
+                    <div class="contact-form-container">
+                        <form class="contact-form"
+                            onsubmit="event.preventDefault(); alert('Request sent. We will analyze your inputs.');">
+                            <h3 style="margin-bottom: 1.5rem;">Request Efficiency Audit</h3>
+
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" required placeholder="Jane Doe">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Work Email *</label>
+                                <input type="email" id="email" required placeholder="jane@company.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="website">Company Website</label>
+                                <input type="url" id="website" placeholder="https://company.com">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="bottleneck">Biggest Operational Bottleneck</label>
+                                <textarea id="bottleneck" rows="3"
+                                    placeholder="e.g. 'Manual data entry takes 10 hours a week...'"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="interest">Service Interest</label>
+                                <select id="interest"
+                                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px;">
+                                    <option value="audit">Full Efficiency Audit</option>
+                                    <option value="app">Custom App Development</option>
+                                    <option value="consult">General Consultation</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">Initialize
+                                Request</button>
+
+                            <p style="text-align: center; margin-top: 1rem; font-size: 0.8rem; color: #888;">
+                                We respect your inbox. No spam, just logic.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+            <p>&copy; 2025 System.Logic. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
