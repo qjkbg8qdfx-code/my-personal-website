@@ -752,9 +752,17 @@ img {
 
 /* --- UI/UX Polish Additions --- */
 
-/* 1. Smooth Scrolling */
+/* 1. Smooth Scrolling & Header Fix */
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+    /* Prevent sticky header overlap */
+}
+
+body {
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+    width: 100%;
 }
 
 /* 2. Scroll Reveal Animation Classes */
