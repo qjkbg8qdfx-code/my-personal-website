@@ -15,6 +15,13 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Open Graph Data -->
+    <meta property="og:title" content="Methodology | System.Logic">
+    <meta property="og:description"
+        content="The Core-Logic Protocol: A systematic approach to digital auditing, architecture, development, and automation.">
+    <meta property="og:image" content="https://placehold.co/1200x630/222/FFF?text=System.Logic">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
@@ -22,6 +29,13 @@
     <header class="site-header">
         <div class="container">
             <a href="index.html" class="logo">System.<span style="color:var(--color-accent)">Logic</span></a>
+
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -37,14 +51,16 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h1>The Core-Logic Protocol/</h1>
-                <p>We don't guess. We architect. Efficiency is a science.</p>
+                <div class="reveal">
+                    <h1>The Core-Logic Protocol/</h1>
+                    <p>We don't guess. We architect. Efficiency is a science.</p>
+                </div>
             </div>
         </section>
 
         <section class="section-padding">
             <div class="container">
-                <div class="philosophy-block">
+                <div class="philosophy-block reveal">
                     <h2>System-First vs. Human-Dependent</h2>
                     <p>Most agencies build dependencies: they write code that only they can understand, or they build
                         manual workflows that require constant human maintenance. <strong>System.Logic is
@@ -61,7 +77,7 @@
 
                 <div class="timeline">
                     <!-- Step 1 -->
-                    <div class="timeline-step">
+                    <div class="timeline-step reveal">
                         <div class="step-marker">01</div>
                         <div class="step-content">
                             <h3>Audit (Diagnosis)</h3>
@@ -119,6 +135,7 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

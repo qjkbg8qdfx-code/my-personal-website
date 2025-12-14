@@ -16,6 +16,13 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- Open Graph Data -->
+    <meta property="og:title" content="System.Logic | AI Efficiency & Tech Solutions">
+    <meta property="og:description"
+        content="Helping Australian businesses scale through Automated Workflow Ecosystems and Scalable App Architecture.">
+    <meta property="og:image" content="https://placehold.co/1200x630/222/FFF?text=System.Logic">
+    <meta property="og:type" content="website">
+
     <style>
         /* 針對數據展示的微調 */
         .stat-grid {
@@ -78,6 +85,13 @@
     <header class="site-header">
         <div class="container">
             <a href="#" class="logo">System.<span style="color:var(--color-accent)">Logic</span></a>
+
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
             <nav class="main-nav">
                 <ul>
                     <li><a href="#services">Solutions</a></li>
@@ -92,7 +106,7 @@
     <main>
         <section id="hero" class="hero-section">
             <div class="container">
-                <div class="hero-content">
+                <div class="hero-content reveal">
                     <h1>Efficiency is a<br>Science, Not Magic.</h1>
                     <p class="hero-sub">
                         We deploy <strong>Automated Workflow Ecosystems</strong> and <strong>Scalable
@@ -118,7 +132,7 @@
                     <p>Engineering-grade infrastructure for the modern enterprise.</p>
                 </div>
                 <div class="services-grid">
-                    <div class="service-card">
+                    <div class="service-card reveal">
                         <h3>Scalable App Architecture</h3>
                         <p>Robust, future-proof web and mobile foundations designed to handle growth without technical
                             debt.</p>
@@ -140,7 +154,7 @@
         <section id="methodology" class="about-section">
             <div class="container">
                 <div class="about-content">
-                    <div class="about-text">
+                    <div class="about-text reveal">
                         <h2>The Core-Logic Protocol</h2>
                         <p>We don't guess. We architect. Our proprietary approach ensures that every line of code and
                             every AI agent serves a measurable business outcome.</p>
@@ -160,7 +174,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="about-image">
+                    <div class="about-image reveal delay-mean">
                         <div class="image-placeholder" style="background: linear-gradient(135deg, #eee 0%, #ddd 100%);">
                         </div>
                     </div>
@@ -177,7 +191,7 @@
                 </div>
 
                 <div class="stat-grid">
-                    <div class="stat-card">
+                    <div class="stat-card reveal">
                         <span class="stat-number">40%</span>
                         <span class="stat-label">Efficiency Gain</span>
                         <p style="font-size: 0.8rem; margin-top: 1rem;">Average operational time saved through
@@ -207,7 +221,7 @@
         <section id="contact" class="contact-section">
             <div class="container">
                 <div class="contact-wrapper">
-                    <div class="contact-info">
+                    <div class="contact-info reveal">
                         <h2>Get the Roadmap</h2>
                         <p>Stop relying on guesswork. Request your <strong>Efficiency Audit</strong> or download our
                             <strong>Impact Report</strong> to see the numbers.
@@ -252,6 +266,7 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

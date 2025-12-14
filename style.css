@@ -749,3 +749,112 @@ img {
     background: #ccc;
     color: #555;
 }
+
+/* --- UI/UX Polish Additions --- */
+
+/* 1. Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 2. Scroll Reveal Animation Classes */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+    will-change: opacity, transform;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger delays for children (optional utility) */
+.delay-100 {
+    transition-delay: 0.1s;
+}
+
+.delay-200 {
+    transition-delay: 0.2s;
+}
+
+.delay-300 {
+    transition-delay: 0.3s;
+}
+
+
+/* 3. Mobile Hamburger Menu */
+.hamburger {
+    display: none;
+    /* Hidden on desktop */
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    z-index: 1100;
+    /* Above mobile menu */
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--color-text);
+    transition: all 0.3s ease-in-out;
+}
+
+.no-scroll {
+    overflow: hidden;
+    /* Lock body scroll */
+}
+
+@media (max-width: 768px) {
+
+    /* Show Hamburger */
+    .hamburger {
+        display: block;
+    }
+
+    /* Transform Nav into Overlay/Drawer */
+    .main-nav ul {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* Hidden off-screen */
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        /* or var(--color-bg) */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        transition: right 0.4s ease-in-out;
+        z-index: 1050;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-nav ul.nav-active {
+        right: 0;
+        /* Slide in */
+    }
+
+    .main-nav a {
+        font-size: 1.5rem;
+        /* Larger font for touch */
+    }
+
+    /* Hamburger Animation to 'X' */
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}

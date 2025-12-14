@@ -15,6 +15,13 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Open Graph Data -->
+    <meta property="og:title" content="Solutions | System.Logic">
+    <meta property="og:description"
+        content="Scalable App Architecture, Automated Workflow Ecosystems, and Bespoke Engineering solutions.">
+    <meta property="og:image" content="https://placehold.co/1200x630/222/FFF?text=System.Logic">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
@@ -22,6 +29,13 @@
     <header class="site-header">
         <div class="container">
             <a href="index.html" class="logo">System.<span style="color:var(--color-accent)">Logic</span></a>
+
+            <button class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
             <nav class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -37,15 +51,17 @@
     <main>
         <section class="page-header">
             <div class="container">
-                <h1>Our Solutions/</h1>
-                <p>Engineering-grade infrastructure designed for scalability and precision.</p>
+                <div class="reveal">
+                    <h1>Our Solutions/</h1>
+                    <p>Engineering-grade infrastructure designed for scalability and precision.</p>
+                </div>
             </div>
         </section>
 
         <!-- Solution 1 -->
         <section class="solution-block">
             <div class="container">
-                <div class="solution-content">
+                <div class="solution-content reveal">
                     <h2>Scalable App Architecture</h2>
                     <p class="lead">Future-proof foundations for your digital products.</p>
 
@@ -114,6 +130,7 @@
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
